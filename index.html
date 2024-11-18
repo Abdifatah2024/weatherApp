@@ -9,12 +9,47 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <h1 class="text-3xl text-bold">Four-Days Weather Forecast</h1>
+  <header class="header">
+    <div class="logo">
+      <h1>Weather Forecasts</h1>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#forecast">Forecast</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+    <div class="search-bar">
+        <button>Login</button>
+    </div>
+  </header>
+  <div class="main h-full">
+  <h1 class="text-3xl text-bold my-5">Four-Days Weather Forecast</h1>
   <input type="text" id="city" class="p-2 border-slate-500 bg-slate-200 rounded-sm my-3" placeholder="Enter city" />
   <button onclick="getWeather()" class="p-2 bg-blue-600 text-white rounded-sm my-3" >Get Forecast</button>
   <div class="spinner" id="spinner"></div>
   <div class="forecast" id="forecast"></div>
-
+</div>
+  <div class="footer">
+    <div class="footer-content">
+        <h2>Stay Updated with Weather Forecasts</h2>
+        <p>Subscribe to get the latest weather updates directly in your inbox!</p>
+        <form action="#" method="POST">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Weather App. All rights reserved.</p>
+    </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
