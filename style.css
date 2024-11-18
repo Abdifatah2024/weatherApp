@@ -188,3 +188,56 @@ button:hover {
 .search-bar button:hover {
   background: #ffc107;
 }
+@media (max-width: 768px) {
+  .forecast {
+    flex-wrap: wrap;
+  }
+
+  .day {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    justify-content: center;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .day {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
